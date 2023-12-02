@@ -1,34 +1,45 @@
 
 | CS-665       | Software Design & Patterns |
 |--------------|----------------------------|
-| Name         | FIRST_NAME LAST_NAME       |
-| Date         | MM/DD/YYYY                 |
-| Course       | Fall / Spring / Summer     |
-| Assignment # |                            |
+| Name         | Jacob Kustra               |
+| Date         | 12/5/2023                  |
+| Course       | Fall                       |
+| Assignment # | Project                    | 
 
 # Assignment Overview
-Please add a paragraph or two overviewing the objectives of the assignment.
+
+
+
+# Assignment Assumptions
+
+
 
 # GitHub Repository Link:
-https://github.com/{YOUR_USERNAME}/cs-665-assignment-{ASSIGNMENT_NUMBER}
 
-# Implementation Description 
 
+# Implementation Description
 
 For each assignment, please answer the following:
 
 - Explain the level of flexibility in your implementation, including how new object types can
-be easily added or removed in the future.
+  be easily added or removed in the future.
+
+
 - Discuss the simplicity and understandability of your implementation, ensuring that it is
-easy for others to read and maintain.
+  easy for others to read and maintain.
+
+
 - Describe how you have avoided duplicated code and why it is important.
+
+
 - If applicable, mention any design patterns you have used and explain why they were
-chosen.
+  chosen.
+
 
 
 # Maven Commands
 
-We'll use Apache Maven to compile and run this project. You'll need to install Apache Maven (https://maven.apache.org/) on your system. 
+We'll use Apache Maven to compile and run this project. You'll need to install Apache Maven (https://maven.apache.org/) on your system.
 
 Apache Maven is a build automation tool and a project management tool for Java-based projects. Maven provides a standardized way to build, package, and deploy Java applications.
 
@@ -41,7 +52,7 @@ Maven also integrates with other development tools, such as IDEs and continuous 
 Maven provides a large number of plugins for various tasks, such as compiling code, running tests, generating reports, and creating JAR files. This makes it a versatile tool that can be used for many different types of Java projects.
 
 ## Compile
-Type on the command line: 
+Type on the command line:
 
 ```bash
 mvn clean compile
@@ -66,7 +77,7 @@ mvn clean test
 ```
 
 
-## Spotbugs 
+## Spotbugs
 
 SpotBugs is a static code analysis tool for Java that detects potential bugs in your code. It is an open-source tool that can be used as a standalone application or integrated into development tools such as Eclipse, IntelliJ, and Gradle.
 
@@ -82,13 +93,13 @@ Use the following command:
 mvn spotbugs:gui 
 ```
 
-For more info see 
+For more info see
 https://spotbugs.readthedocs.io/en/latest/maven.html
 
 SpotBugs https://spotbugs.github.io/ is the spiritual successor of FindBugs.
 
 
-## Checkstyle 
+## Checkstyle
 
 Checkstyle is a development tool for checking Java source code against a set of coding standards. It is an open-source tool that can be integrated into various integrated development environments (IDEs), such as Eclipse and IntelliJ, as well as build tools like Maven and Gradle.
 
@@ -98,7 +109,7 @@ By using Checkstyle, developers can ensure that their code adheres to a consiste
 
 Checkstyle is highly configurable and can be customized to fit the needs of your team or organization. It supports a wide range of coding standards and can be integrated with other tools, such as code coverage and automated testing tools, to create a comprehensive and automated software development process.
 
-The following command will generate a report in HTML format that you can open in a web browser. 
+The following command will generate a report in HTML format that you can open in a web browser.
 
 ```bash
 mvn checkstyle:checkstyle
