@@ -7,15 +7,22 @@
 | Assignment # | Project                    | 
 
 # Assignment Overview
-
+For the project, my goal was to create a program that serves a purpose for me and that implements
+a design pattern we did not use in class. The design pattern I choose to implement is the
+separate interface design pattern. I implemented this within my application which is used
+to allow someone to practice their touch typing skills in an easy manner.
 
 
 # Assignment Assumptions
-
+My assumptions were that the user would want to see their score after every round,
+be able to chose the amount of words they want to type each round, and also have a
+difficulty system implemented to increase the complexity as the user improves over time.
+I also assumed the user would want to option to do multiple rounds or be able to end it after
+a round. Also, that they would want to be presented with a score to see how well they did.
 
 
 # GitHub Repository Link:
-
+https://github.com/JacobKustra/cs-665-assignment-project
 
 # Implementation Description
 
@@ -23,17 +30,46 @@ For each assignment, please answer the following:
 
 - Explain the level of flexibility in your implementation, including how new object types can
   be easily added or removed in the future.
+  - My program is very flexible as when adding new object types, most of the functionality
+  has been kept separate so once the change is made in the appropriate class/new class, 
+  everything should function as expected.
 
 
 - Discuss the simplicity and understandability of your implementation, ensuring that it is
   easy for others to read and maintain.
+  - I believe my code was implemented in a way that makes it easy to maintain and read
+  as my application is laid out nicely with well named classes that have broken down individual
+  actions the application needs to take in different classes, making it so that if there are
+  any changes that would need to occur, they can be easily found where to make the change
+  and have it work as expected since it is less coupled. Along with this, should there be a
+  need to add in a different method of generating words for the program to use, it will be
+  easy to implement the WordGenerator.java interface into a class that contains the new
+  functionality.
 
 
 - Describe how you have avoided duplicated code and why it is important.
+  - I avoided duplicated code by utilizing design patterns such as the separate interface design
+  pattern and by pulling methods used by multiple classes out into their own class to easily be
+  called. I did this with Messages.java which contains common messaging that goes out to the
+  user throughout multiple classes.
 
 
 - If applicable, mention any design patterns you have used and explain why they were
   chosen.
+  - In my project, I implemented two design patterns, the first being the separate interface
+  design pattern, which was not talked about in class, and the singleton design pattern. I used
+  the separate interface design pattern to create two packages, the customerTouchTypingInterface 
+  and the separate interface. The customerTouchTypingInterface has access to the WordGenerator.java
+  interface while the separate package contains WordGen.java which implements it. This is useful 
+  for a number of reasons with the first of which being future-proofing the implementation as 
+  any changes made to the codes implementation will not be impacting the users directly since 
+  they can't see the direct implementation of it. Additionally, it allows for the option for the
+  implementation to be done in such a way that allows multiple different classes to implement it,
+  all which can function differently based on need without the client knowing. 
+  - Then I used the singleton design pattern within my TouchTypingProgramInterface.java class,
+  which essentially controls how the whole program is run to ensure there can only be one instance
+  of it, thus preventing overloading the system and stopping the customer from running into issues
+  by trying to create more than one.
 
 
 
